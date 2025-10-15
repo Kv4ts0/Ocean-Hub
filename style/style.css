@@ -1,0 +1,336 @@
+@import "fontsource-firago/index.css";
+body{
+    background: radial-gradient(circle, #ffffff, #f2f2ff);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "FiraGO", sans-serif;
+}
+
+/* Text Elements */
+h1{
+    font-weight: 500;
+    font-size: 2rem;
+}
+h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* Header */
+header{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li{
+    margin: 0 1rem 0 1rem;
+    list-style: none;
+}
+header nav ul li a{
+    font-weight: 300;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color: #0040FF;
+}
+header nav ul input{
+    cursor: pointer;
+    font-family: "FiraGO", sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #0040FF, #5983FF);
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+}
+header nav ul input:hover{
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: #0040FF;
+    border: 1px solid #0040FF;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* First Section */
+#first_section{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 9rem;
+    align-items: center;
+    padding: 70px 0px;
+    background-image: url('../assets/images/s1cover.svg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;  
+}
+#first_section .content{
+    width: 1200px;
+    gap: 4rem;
+    display: flex;
+}
+#first_section .content h1{
+    width: 50%;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #002081;
+}
+#first_section .content h1 span{
+    font-weight: 500;
+    background: linear-gradient(90deg, #0040ff, #5983ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#first_section .content .second{
+    width: 50%;
+}
+#first_section .content .second p{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+#first_section .content .second .buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+#first_section .content .second .buttons input{
+    cursor: pointer;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    font-family: "FiraGO", sans-serif;
+}
+#first_section .content .second .buttons input:nth-child(1){
+    background: linear-gradient(90deg, #0040ff, #5983ff);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+#first_section .content .second .buttons input:nth-child(1):hover{
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: #0040FF;
+    border: 1px solid #0040FF;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+#first_section .content .second .buttons input:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #0040FF;
+    background-color: white;
+    border: 1px solid #0040FF;
+}
+#first_section .howitWorks{
+    height: 150px;
+    width: 100%;
+    background-color: rgba(228, 234, 254, 0.5);
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#first_section .howitWorks .card{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 1rem;
+}
+/* Second Section */
+#second_section{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 70px 0px;
+    background-image: url('../assets/images/s2cover.svg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;  
+}
+#second_section .content{
+    background-color: rgba(228, 234, 254, 0.5);
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    gap: 12rem;
+    justify-content: center;
+    align-items: center;
+}
+#second_section .content .card{
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Third Section */
+#third_section{
+    margin: 1rem 0;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 70px 0px;
+    background-image: url('../assets/images/s3cover.svg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;  
+} 
+#third_section .content{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#third_section h1{
+    font-weight: 300;
+    width: 1200px;
+    color: #002081;
+}
+#third_section .content .form{
+    border-radius: 20px;
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#third_section .content .form .first_card{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+}
+#third_section .content .form .first_card input, #third_section .content .form .first_card textarea{
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #AAAAAA;
+    padding: 0 2rem;
+}
+#third_section .content .form .first_card textarea{
+    height: 90px;
+}
+#third_section .content .form .first_card .btn_submit{
+    background: linear-gradient(90deg, #0040ff, #5983ff);
+    border: none;
+    color: white;
+    width: 90%;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+#third_section .content .form .first_card .btn_submit:hover{
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: #0040FF;
+    border: 1px solid #0040FF;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+#third_section .content .form .second_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: flex-start;
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, #0040ff, #5983ff);
+}
+#third_section .content .form .second_card div{
+    color: white;
+    font-weight: 200;
+    margin-left: 5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#third_section .content .form .second_card img{
+    margin: 0 auto;
+}
+
+/* Fourth Section */
+#fourth_section{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 70px 0px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;  
+} 
+
+#fourth_section .content{
+    gap: 2rem;
+    display: flex;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fourth_section .content .service_card{
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+#fourth_section .content .service_card div{
+    font-weight: 300;
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#fourth_section .content .blue{
+    background: linear-gradient(90deg, #0040ff, #5983ff);
+    color: white;
+}
