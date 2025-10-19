@@ -122,7 +122,8 @@ header nav ul input:hover{
     width: 100%;
     gap: 2rem;
 }
-#first_section .content .second .buttons input{
+#first_section .content .second .buttons input,
+#first_section .content .second .buttons a{
     cursor: pointer;
     width: 50%;
     border-radius: 20px;
@@ -131,6 +132,7 @@ header nav ul input:hover{
     font-family: "FiraGO", sans-serif;
 }
 #first_section .content .second .buttons input:nth-child(1){
+    width: 100%;
     background: linear-gradient(90deg, #0040ff, #5983ff);
     color: white;
     font-size: 1.3rem;
@@ -213,7 +215,8 @@ header nav ul input:hover{
     background-repeat: no-repeat; 
     background-position: center;  
 } 
-#third_section .content{
+#third_section .content,
+.one_click_planner .content{
     width: 1200px;
     display: flex;
     justify-content: center;
@@ -224,16 +227,18 @@ header nav ul input:hover{
     width: 1200px;
     color: #002081;
 }
-#third_section .content .form{
+#third_section .content .form,
+.one_click_planner .content .form{
     border-radius: 20px;
     background-color: white;
-    height: 500px;
+    height: 600px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-#third_section .content .form .first_card{
+#third_section .content .form .first_card,
+.one_click_planner .content .form .first_card{
     margin: 0 2rem;
     display: flex;
     flex-direction: column;
@@ -243,17 +248,25 @@ header nav ul input:hover{
     width: 50%;
     height: 100%;
 }
-#third_section .content .form .first_card input, #third_section .content .form .first_card textarea{
+#third_section .content .form .first_card input, 
+#third_section .content .form .first_card textarea,
+.one_click_planner .content .form .first_card input, 
+.one_click_planner .content .form .first_card textarea{
     width: 80%;
     height: 40px;
     border-radius: 20px;
     border: 1px solid #AAAAAA;
     padding: 0 2rem;
 }
-#third_section .content .form .first_card textarea{
+#third_section .content .form .first_card textarea,
+.one_click_planner .content .form .first_card textarea{
     height: 90px;
 }
-#third_section .content .form .first_card .btn_submit{
+.one_click_planner .content .form .first_card a{
+    width: 100%;
+}
+#third_section .content .form .first_card .btn_submit,
+.one_click_planner .content .form .first_card .btn_submit{
     background: linear-gradient(90deg, #0040ff, #5983ff);
     border: none;
     color: white;
@@ -261,7 +274,8 @@ header nav ul input:hover{
     font-size: 1.3rem;
     font-weight: 300;
 }
-#third_section .content .form .first_card .btn_submit:hover{
+#third_section .content .form .first_card .btn_submit:hover,
+.one_click_planner .content .form .first_card .btn_submit:hover{
     background: linear-gradient(135deg, #ffffff, #ffffff);
     color: #0040FF;
     border: 1px solid #0040FF;
@@ -269,7 +283,8 @@ header nav ul input:hover{
     font-style: normal;
     font-display: swap;
 }
-#third_section .content .form .second_card{
+#third_section .content .form .second_card,
+.one_click_planner .content .form .second_card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,7 +295,8 @@ header nav ul input:hover{
     height: 100%;
     background: linear-gradient(90deg, #0040ff, #5983ff);
 }
-#third_section .content .form .second_card div{
+#third_section .content .form .second_card div,
+.one_click_planner .content .form .second_card div{
     color: white;
     font-weight: 200;
     margin-left: 5rem;
@@ -289,7 +305,8 @@ header nav ul input:hover{
     justify-content: center;
     align-items: center;
 }
-#third_section .content .form .second_card img{
+#third_section .content .form .second_card img,
+.one_click_planner .content .form .second_card img{
     margin: 0 auto;
 }
 
@@ -463,3 +480,226 @@ footer .subinfo .terms_conditions{
     align-items: center;
 }
 
+/* Functions */
+
+.one_click_planner{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one_click_planner .content .form{
+    border-radius: 20px;
+    background-color: white;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.one_click_planner .content .form .second_card{
+    color: white;
+}
+.one_click_planner .content .form .second_card div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+}
+.one_click_planner .content .form .second_card div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.one_click_planner .content .form .second_card div p{
+    width: 70%;
+}
+.one_click_planner .content .form .first_card div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.one_click_planner .content .form .first_card div input{
+    width: 20px;
+    height: 20px;
+}
+.one_click_planner .content .form .top{
+    justify-content: flex-start;
+    align-items: center;
+}
+.one_click_planner .content .form .top h1{
+    margin: 2rem auto;
+    font-weight: 300;
+}
+.one_click_planner .content .form .top .horizontal_card{
+
+    background-color: rgba(228, 234, 254, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.one_click_planner .content .form .top .horizontal_card .port,
+.one_click_planner .content .form .top .horizontal_card .companies{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+.one_click_planner .content .form .top .horizontal_card .companies{
+    background-color: white;
+}
+.one_click_planner .content .form .top .horizontal_card .port div,
+.one_click_planner .content .form .top .horizontal_card .companies div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.one_click_planner .content .form .top .horizontal_card .companies div{
+    color: black;
+    font-weight: 300;
+}
+.one_click_planner .content .form .top div{
+    padding: 5px;
+    border-radius: 20px;
+    width: 90%;
+}
+.one_click_planner .content .form .top .horizontal_card{
+    width: 100%;
+}
+
+.one_click_planner .content .form .top .horizontal_card .port div h3,
+.one_click_planner .content .form .top .horizontal_card .port div p,
+.one_click_planner .content .form .top .horizontal_card .companies div h3,
+.one_click_planner .content .form .top .horizontal_card .companies div p{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.one_click_planner .content .form .top .horizontal_card .companies img{
+    width: 50px;
+    height: 50px;
+}
+.one_click_planner .content .form .top div .scrollmenu {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex; 
+  flex-direction: row;   
+  justify-content: flex-start;
+  gap: 20px;               
+  padding: 10px;
+}
+.scrollmenu::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollmenu::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.scrollmenu::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+.horizontal_card {
+  flex: 0 0 auto; 
+  display: flex;          
+  flex-direction: column; 
+  gap: 10px;
+  min-width: 300px;  
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.horizontal_card .port,
+.horizontal_card .companies {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+
+/* Sign In */
+
+
+#third_section .content .form .sign_in{
+    font-weight: 300;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#third_section .content .form .sign_in_inputs h1{
+    width: auto;
+    margin: 0 auto;
+    width: 500;
+    color: black;
+}
+#third_section .content .form .sign_in_inputs div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#third_section .content .form .sign_in_inputs div .left{
+    color: gray;
+    display: flex;
+    gap: 2px;
+    justify-content: flex-start;
+    width: auto;
+
+}
+#third_section .content .form .sign_in_inputs input{
+    width: 90%;
+}
+#third_section .content .form .sign_in_inputs div .forgot_password{
+    font-size: 14px;
+    text-decoration: underline;
+    color: gray;
+    float: right;
+    text-wrap: no-wrap;
+}
+#third_section .content .form .sign_in_inputs div .left input{
+    width: 20px;
+    height: 20px;
+}
+#third_section .content .form .sign_in_inputs .form_submit{
+    width: 100%;
+}
+#third_section .content .form .sign_in_inputs .form_submit .btn_submit{
+    width: 100%;
+}
+
+#third_section .content .form .sign_in_inputs .alternative_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#third_section .content .form .sign_in_inputs .alternative_login{
+    font-weight: 300;
+}
+#third_section .content .form .sign_in_inputs .alternative_login div{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+#third_section .content .large_form{
+    height: 800px;
+}
+#third_section .content .form .verification{
+    font-weight: 300;
+    gap: 4rem;
+}
+#third_section .content .form .verification span{
+    font-weight: 600;
+    color: #002081;
+}
