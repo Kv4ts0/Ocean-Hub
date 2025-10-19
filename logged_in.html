@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=anchor,chat,search" />
+    
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Welcome Back</title>
+</head>
+<body>
+    <header>
+        <a href="./logged_in.html">
+            <img src="./assets/images/logo.svg" alt="Company Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="logged_in.html">Home</a></li>
+                <li><a href="#service_providers">Service Providers</a></li>
+                <li><a href="#saved_ports">Saved Ports</a></li>
+                <li><a href="#fifth_section">F.A.Q</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">anchor</span></a></li>
+                <li><a href="#"><span class="material-symbols-outlined">chat</span></a></li>
+                <li><a href="#"><img src="./assets/images/avatar.svg" alt="User Avatar Button"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="first_section">
+        <div class="content logged_in">
+            <div class="welcome_text">
+                <h1>Welcome Back!</h1>
+                <p>Plan your next voyage and find service providers instantly.</p>
+            </div>
+            <div class="second statistics">
+                <div class="card">
+                    <div class="circle"><p>0</p></div>
+                    <img src="./assets/images/active_fleet.svg" alt="Active Fleet Section">
+                    <p>Active Fleet</p>
+                </div>
+                <div class="card">
+                    <div class="circle"><p>0</p></div>
+                    <img src="./assets/images/my_contracts.svg" alt="My Contracts Section">
+                    <p>My Contracts</p>
+                </div>
+                <div class="card">
+                    <div class="circle"><p>0</p></div>
+                    <img src="./assets/images/completed_contracts.svg" alt="Completed Contracts">
+                    <p>Completed Contracts</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="howitWorks">
+            <h1>How it works?</h1>
+            <div class="card">
+                <img src="./assets/images/arrow.svg" alt="Arrow Icon">
+                <p>Fill in vessel route & requirements</p>
+            </div>
+            <div class="card">
+                <img src="./assets/images/list.svg" alt="List Icon">
+                <p>Get service providers list</p>
+            </div>
+            <div class="card">
+                <img src="./assets/images/company.svg" alt="Company Icon">
+                <p>Contact companies directly</p>
+            </div>
+        </div>
+    </section>
+    <section id="service_providers">
+        <div class="header">
+            <h1>Service Providers</h1>
+            <a href="#">See All</a>
+        </div>
+        <div class="search">
+            <p>Find and connect with verified maritime service companies near your routes.</p>
+            <div>
+                <input class="search_input" type="search" name="search" id="search_providers" placeholder="🔎︎ Search by company name, port, or service type...">
+                <input class="search_btn" type="submit" name="submit" id="submit" value="❯">
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="companies_card">
+                <img src="./assets/images/company1.png" alt="Company 1 Logo">
+                <div class="header">
+                    <h3>Ljubljana</h3>
+                    <div>
+                        <p>4.3</p>
+                        <img src="./assets/images/star.svg" alt="Star Icon">
+                    </div>
+                    <p>Service: Ship Chandler</p>
+                    <p>Location: Rotterdam, Netherlands</p>
+                    <p>Supplying fresh and dry provisions, bonded stores, and technical equipment for commercial and offshore vessels.</p>
+                    <input type="submit" name="contact" id="contact" value="Contact">
+                </div>
+            </div>
+            <div class="companies_card">
+                <img src="./assets/images/company2.png" alt="Company 2 Logo">
+                <div class="header">
+                    <h3>Venice.</h3>
+                    <div>
+                        <p>4.5</p>
+                        <img src="./assets/images/star.svg" alt="Star Icon">
+                    </div>
+                    <p>Service: Bunkering</p>
+                    <p>Location: Piraeus, Greece</p>
+                    <p>Trusted supplier of marine fuel, lubricants, and fuel management services with 24/7 port availability. We are waiting for you</p>
+                    <input type="submit" name="contact" id="contact" value="Contact">
+                </div>
+            </div>
+            <div class="companies_card">
+                <img src="./assets/images/company3.png" alt="Company 3 Logo">
+                <div class="header">
+                    <h3>Cairo</h3>
+                    <div>
+                        <p>4.8</p>
+                        <img src="./assets/images/star.svg" alt="Star Icon">
+                    </div>
+                    <p>Service: Maritime Agency</p>
+                    <p>Location: Fujairah, UAE</p>
+                    <p>Comprehensive vessel husbandry, crew handling, and documentation services for tankers and cargo vessels.</p>
+                    <input type="submit" name="contact" id="contact" value="Contact">
+                </div>
+            </div>
+            <div class="companies_card">
+                <img src="./assets/images/company4.png" alt="Company 4 Logo">
+                <div class="header">
+                    <h3>Madrid</h3>
+                    <div>
+                        <p>4.5</p>
+                        <img src="./assets/images/star.svg" alt="Star Icon">
+                    </div>
+                    <p>Service: Cargo Surveyor</p>
+                    <p>Location: Hamburg, Germany</p>
+                    <p>Independent marine survey and cargo inspection company ensuring cargo quality and compliance with IMO standards.</p>
+                    <input type="submit" name="contact" id="contact" value="Contact">
+                </div>
+            </div>
+            <div class="companies_card">
+                <img src="./assets/images/company5.png" alt="Company 5 Logo">
+                <div class="header">
+                    <h3>Sydi</h3>
+                    <div>
+                        <p>4.9</p>
+                        <img src="./assets/images/star.svg" alt="Star Icon">
+                    </div>
+                    <p>Service: Maritime Agency</p>
+                    <p>Location: Singapore</p>
+                    <p>Full-service port agency offering vessel clearance, customs assistance, and logistics coordination</p>
+                    <input type="submit" name="contact" id="contact" value="Contact">
+                </div>
+            </div>
+            <div class="companies_card">
+                <img src="./assets/images/company6.png" alt="Company 6 Logo">
+                <div class="header">
+                    <h3>Frankfurt</h3>
+                    <div>
+                        <p>4.2</p>
+                        <img src="./assets/images/star.svg" alt="Star Icon">
+                    </div>
+                    <p>Service: Bunkering / Lubricants</p>
+                    <p>Location: Gibraltar</p>
+                    <p>Supplier of marine lubricants and fuel oils with efficient delivery network and ISO-certified storage facilities.</p>
+                    <input type="submit" name="contact" id="contact" value="Contact">
+                </div>
+            </div>
+            <div class="companies_card">
+                <img src="./assets/images/company7.png" alt="Company 7 Logo">
+                <div class="header">
+                    <h3>Aiken</h3>
+                    <div>
+                        <p>4.5</p>
+                        <img src="./assets/images/star.svg" alt="Star Icon">
+                    </div>
+                    <p>Service: Marine Catering</p>
+                    <p>Location: Bergen, Norway</p>
+                    <p>Premium catering and supply services for offshore fleets. Providing fresh, frozen, and specialty food provisions...</p>
+                    <input type="submit" name="contact" id="contact" value="Contact">
+                </div>
+            </div>
+            <div class="companies_card">
+                <img src="./assets/images/comapny8.png" alt="Company 8 Logo">
+                <div class="header">
+                    <h3>Doha.</h3>
+                    <div>
+                        <p>4.3</p>
+                        <img src="./assets/images/star.svg" alt="Star Icon">
+                    </div>
+                    <p>Service: Ship Maintenance</p>
+                    <p>Location: Constanța, Romania</p>
+                    <p>Specialized in onboard mechanical, electrical, and hull maintenance with rapid response teams available across the...</p>
+                    <input type="submit" name="contact" id="contact" value="Contact">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="saved_ports">
+        <div class="header">
+            <h1>Saved Ports</h1>
+            <a href="#">See All</a>
+        </div>
+        <div class="search">
+            <p>These are the ports you selected in the One Click Planner</p>
+            <div>
+                <input class="search_input" type="search" name="search" id="search_providers" placeholder="🔎︎ Search by company name, port, or service type...">
+                <input class="search_btn" type="submit" name="submit" id="submit" value="❯">
+            </div>
+
+        </div>
+        <div class="one_click_planner">
+        <div class="content flex">
+            <div class="form">
+                <div class="second_card top whole_card">
+                    <div>
+                        <div class="scrollmenu">
+                            <div class="horizontal_card">
+                                <div class="port">
+                                    <img src="./assets/images/anchor_light.svg" alt="Anchor Icon">
+                                    <div>
+                                        <h3>Port of Rotterdam – Netherlands</h3>
+                                        <p>⚲ Distance: 0 km (Current Position)</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c1.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>Shell Marine Services BV</h3>
+                                        <p>Marine Fuel & Lubricants Supplier</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c2.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>SeaFresh Chandler Co.</h3>
+                                        <p>Ship Chandler (Provisions & Fresh Supplies)</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c3.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>EcoMarine Waste Solutions</h3>
+                                        <p>Waste & Sludge Disposal Services</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c4.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>Maritime CrewLine Europe</h3>
+                                        <p>Crew Change & Port Entry Management</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="horizontal_card">
+                                <div class="port">
+                                    <img src="./assets/images/anchor_light.svg" alt="Anchor Icon">
+                                    <div>
+                                        <h3>Port of Antwerp – Belgium</h3>
+                                        <p>⚲ Distance: ~160 km</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c5.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>NorthSea Bunker Alliance NV</h3>
+                                        <p>Bunkering & Marine Fuel</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c6.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>BluePort Provisions NV</h3>
+                                        <p>Ship Chandler & Catering Supplies</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c7.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>PortClean Antwerp</h3>
+                                        <p>Waste Management & Recycling Services</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c8.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>CrewConnect Belgium</h3>
+                                        <p>Crew Transportation & Documentation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="horizontal_card">
+                                <div class="port">
+                                    <img src="./assets/images/anchor_light.svg" alt="Anchor Icon">
+                                    <div>
+                                        <h3>Port of Marseille – France</h3>
+                                        <p>⚲ Distance: ~980 km</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c9.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>MedFuel Logistics SARL</h3>
+                                        <p>Bunkering & Oil Supply</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c10.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>ProMarine Supplies France</h3>
+                                        <p>Ship Chandler (Food & Spare Parts)</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c11.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>CleanWave Marine</h3>
+                                        <p>Waste Disposal & Sludge Collection</p>
+                                    </div>
+                                </div>
+                                <div class="companies">
+                                    <img src="./assets/images/c12.jpg" alt="Company Logo">
+                                    <div>
+                                        <h3>CrewLink Europe SAS</h3>
+                                        <p>Crew Exchange & Assistance Services</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fifth_section">
+        <h1>F.A.Q</h1>
+        <div class="content">
+            <div class="left_side">
+                <div>
+                    <img src="./assets/images/group.svg" alt="Group Icon">
+                    <div class="qa">
+                        <h2>My Account</h2>
+                        <p>How do I create an account.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/images/credit_card.svg" alt="Billings Icon">
+                    <div class="qa">
+                        <h2>Billing & Payments</h2>
+                        <p>Information about how we charge you for our services.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/images/license.svg" alt="License Icon">
+                    <div class="qa">
+                        <h2>Copyright & Licenses</h2>
+                        <p>Ownership of Content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side">
+                <div>
+                    <img src="./assets/images/anchor.svg" alt="Group Icon">
+                    <div class="qa">
+                        <h2>One-Click Planner</h2>
+                        <p>Information about One-Click Planner</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/images/calendar_clock.svg" alt="Billings Icon">
+                    <div class="qa">
+                        <h2>Free Trial</h2>
+                        <p>Before you use our services you can use it free for 10 days</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/images/contact_support.svg" alt="License Icon">
+                    <div class="qa">
+                        <h2>Ask A Question</h2>
+                        <p>Didn’t find what you were looking for?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="main">
+            <div class="company">
+                <a href="./logged_in.html">
+                    <img src="./assets/images/logo.svg" alt="Company Logo">
+                </a>
+                <p>Simplify your maritime operations – plan your route, find service providers, and manage everything from one hub</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><p>Navigation</p></li>
+                    <li><a href="logged_in.html">Home</a></li>
+                    <li><a href="#service_providers">Service Providers</a></li>
+                    <li><a href="#saved_ports">Saved Ports</a></li>
+                    <li><a href="#fifth_section">F.A.Q</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <div>
+                    <img src="./assets/images/mail_dark.svg" alt="Mail Icon">
+                    <p>Email: support@oceanhub.com</p>
+                </div>
+                <div>
+                    <img src="./assets/images/call_dark.svg" alt="Mail Icon">
+                    <p>Phone: +1 (234) 567-890</p>
+                </div>
+                <div>
+                    <img src="./assets/images/store_dark.svg" alt="Mail Icon">
+                    <p>120 Maritime Avenue, Port City, Global</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="subinfo">
+            <div class="terms_conditions">
+                <p>Legal Terms</p>
+                <p>Privacy Policy</p>
+            </div>
+            <p>OceanHub © 2025 - All Rights Reserved</p>
+            <div class="social">
+                <img src="./assets/images/facebook.svg" alt="Facebook Icon">
+                <img src="./assets/images/instagram.svg" alt="Instagram Icon">
+                <img src="./assets/images/linkedin.svg" alt="Linkedin Icon">
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
