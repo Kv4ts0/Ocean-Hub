@@ -97,6 +97,45 @@ header nav ul input:hover{
     gap: 4rem;
     display: flex;
 }
+#first_section .logged_in .welcome_text{
+    width: 50%;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+#first_section .logged_in .statistics{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 150px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(136, 162, 247, 0.3);
+}
+#first_section .logged_in .statistics .card{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#first_section .logged_in .statistics .card p{
+    font-size: 14px;
+}
+#first_section .logged_in .statistics .card .circle{
+    margin-left: 2rem;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100%;
+}
+#first_section .logged_in .statistics .card .circle p{
+    margin: 0;
+    padding: 0;
+}
 #first_section .content h1{
     width: 50%;
     font-size: 2.5rem;
@@ -702,4 +741,168 @@ footer .subinfo .terms_conditions{
 #third_section .content .form .verification span{
     font-weight: 600;
     color: #002081;
+}
+
+/* Authorization User */
+header a .material-symbols-outlined{
+    color: gray;
+}
+header a .material-symbols-outlined:hover{
+    color: #0040FF;
+}
+#service_providers,
+#saved_ports{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../assets/images/s2cover.svg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;  
+}
+#service_providers .header,
+#saved_ports .header{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+#service_providers .header a,
+#saved_ports .header a{
+    text-decoration: underline;
+}
+#service_providers .search,
+#saved_ports .search{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+#service_providers .search div,
+#saved_ports .search div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 500px;
+}
+#service_providers .search div .search_input,
+#saved_ports .search div .search_input{
+    width: 70%;
+    height: 40px;
+    border: 1px solid #7496fc;
+    border-radius: 20px 0 0 20px;
+    padding: 0 20px;
+}
+#service_providers .search div .search_btn,
+#saved_ports .search div .search_btn{
+    cursor: pointer;
+    font-family: "FiraGO", sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #0040FF, #5983FF);
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    width: 50px;
+    height: 40px;
+}
+#service_providers .content,
+#saved_ports .content{
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: rgba(228, 234, 254, 0.5);
+    font-weight: 300;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#service_providers .content .companies_card,
+#saved_ports .content .companies_card{
+    padding: 1rem;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+#service_providers .content .companies_card .header,
+#saved_ports .content .companies_card .header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#service_providers .content .companies_card .header div,
+#saved_ports .content .companies_card .header div{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#service_providers .content .companies_card .header div p,
+#saved_ports .content .companies_card .header div p{
+    font-size: 20px;
+    font-weight: 500;
+}
+#service_providers .content .companies_card .header div img,
+#saved_ports .content .companies_card .header div img{
+    width: 30px;
+    height: 30px;
+}
+#service_providers .content .companies_card .header input,
+#saved_ports .content .companies_card .header input{
+    cursor: pointer;
+    font-family: "FiraGO", sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #0040FF, #5983FF);
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: 40px;
+}
+#service_providers .content .companies_card img,
+#saved_ports .content .companies_card img{
+    width: 100%;
+    height: 150px;
+}
+#saved_ports{
+    margin: 2rem 0;
+}
+#saved_ports .one_click_planner .content .form{
+    background-color: rgba(228, 234, 254, 0);
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+#saved_ports .one_click_planner .flex{
+    height: 800px;
+}
+#saved_ports .one_click_planner .flex .form .whole_card{
+    justify-content: center;
+    background-color: none;
+    width: 80%;
+}
+#saved_ports .one_click_planner .flex .form .whole_card .scrollmenu .horizontal_card{
+    width: 60%;
+    height: 600px;
 }
