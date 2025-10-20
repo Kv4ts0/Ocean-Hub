@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=anchor,chat,search" />
-    
     <link rel="stylesheet" href="./style/style.css">
     <title>Welcome Back</title>
 </head>
@@ -21,7 +20,18 @@
                 <li><a href="#fifth_section">F.A.Q</a></li>
                 <li><a href="#"><span class="material-symbols-outlined">anchor</span></a></li>
                 <li><a href="#"><span class="material-symbols-outlined">chat</span></a></li>
-                <li><a href="#"><img src="./assets/images/avatar.svg" alt="User Avatar Button"></a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#"><img src="./assets/images/avatar.svg" alt="User Avatar Button"></a>
+                        <div class="dropdown-content">
+                            <a href="my_account.html"><img src="./assets/images/my_profile.svg" alt="My Profile Icon"> My Profile</a>
+                            <a href="settings.html"><img src="./assets/images/settings.svg" alt="My Profile Icon"> Settings & Privacy</a>
+                            <a href="billing_payments.html"><img src="./assets/images/billing_payments.svg" alt="My Profile Icon"> Billing & Payments</a>
+                            <a href="#"><img src="./assets/images/cart.svg" alt="My Profile Icon"> Current Plan</a>
+                            <a href="sign_in.html"><img src="./assets/images/leave.svg" alt="My Profile Icon"> Log Out</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -29,7 +39,8 @@
         <div class="content logged_in">
             <div class="welcome_text">
                 <h1>Welcome Back!</h1>
-                <p>Plan your next voyage and find service providers instantly.</p>
+                <p>Plan your next voyage and find service providers instantly.</p><br>
+                <a href="ocp_logged_in.html"><input type="submit" name="one_click_planner" id="one_click_planner" value="One Click Planner"></a>
             </div>
             <div class="second statistics">
                 <div class="card">
