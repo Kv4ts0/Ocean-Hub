@@ -1422,6 +1422,27 @@ input[type="file"] {
         justify-content: center;
         align-items: center;
     }
+    .one_click_planner .content .form .top .horizontal_card .port{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .one_click_planner .content .form .top .horizontal_card .companies{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .one_click_planner .content .form .top .horizontal_card .companies div p{
+        text-wrap: wrap;
+    }
+    .one_click_planner .content .form .top .horizontal_card .port div h3{
+        text-wrap: wrap;
+    }
+    .one_click_planner .content .form .top .horizontal_card .port div p{
+        text-wrap: wrap;
+    }
 }
 @media only screen and (max-width: 720px){
     footer .subinfo{
@@ -1433,8 +1454,16 @@ input[type="file"] {
     #fourth_section .content .service_card{
         width: 80%;
     }
+    .one_click_planner .content .form .first_card{
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media only screen and (max-width: 640px){
+    .one_click_planner .content .form .second_card{
+        width: 100%;
+    }
+
     #second_section .content{
         flex-direction: column;
         gap: 1rem;
