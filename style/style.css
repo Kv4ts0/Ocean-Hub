@@ -29,6 +29,109 @@ a{
 }
 
 /* Header */
+
+/* Burger Menu  */
+#menu-toggle {
+  display: none;
+}
+.menu-button-container {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #002081;
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menu-button::before {
+  content: '';
+  position: relative;
+  top: -10px;
+}
+
+.menu-button::after {
+  content: '';
+  position: relative;
+  top: 4px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: transparent;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  transform: rotate(45deg) translate(5px,5px);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  transform: rotate(-45deg) translate(5px,-5px);
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 780px) {
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    padding-left: 2rem;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #002081;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    max-height: 500px;
+  }
+
+  .menu li {
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid #002081;
+  }
+
+  .menu li a {
+    font-family: "FiraGO", sans-serif;
+    font-size: 2rem;
+    color: white;
+    display: block;
+    width: 100%;
+  }
+}
+
 header{
     height: 100px;
     background-color: white;
@@ -1067,4 +1170,300 @@ input[type="file"] {
     color: gray;
     font-weight: 300;
     font-size: 14px;
+}
+
+.one_click_planner .content .form .centered p{
+    font-weight: 300;
+}
+.one_click_planner .content .form .centered .blue_span{
+    color: #0040FF;
+    font-size: 30px;
+    font-weight: 600;
+}
+.one_click_planner .content .form .centered .plan_cards{
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+.one_click_planner .content .form .centered .services_grid{
+    display: grid;
+    width: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+.one_click_planner .content .form .centered .services_grid .service_horizontal_card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.one_click_planner .content .form .centered .services_grid .service_horizontal_card img{
+    width: 25px;
+    height: 25px;
+}
+.one_click_planner .content .form .centered .invoice_buttons .btn_medium{
+    width: 70%;
+}
+.one_click_planner .content .form .centered .invoice_buttons .btn_small{
+    background: white;
+    border: 1px solid #0040FF;
+    color: #002081;
+    width: 20px;
+}
+.one_click_planner .content .form .centered .invoice_buttons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.one_click_planner .content .form .second_card .service_card{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+.one_click_planner .content .form .second_card .service_card div{
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    align-items: center;
+    flex-direction: row;
+}
+.one_click_planner .content .form .second_card .service_card div img{
+    padding: 0;
+    margin: 0;
+}
+.one_click_planner .content .form .second_card .service_card div p{
+    margin: 0;
+    padding: 0;
+    color: black
+}
+.one_click_planner .content .form .second_card .blue_card{
+    background: linear-gradient(135deg, #0040FF, #5983FF);
+    color: white;
+}
+.one_click_planner .content .form .second_card .blue_card div p{
+    color: white;
+}
+@media only screen and (max-width: 1280px){
+    #first_section .content,
+    .one_click_planner .content,
+    #third_section h1,
+    #third_section .content,
+    #fourth_section .content,
+    footer .main,
+    #service_providers .header,
+    #saved_ports .header,
+    #service_providers .content,
+    #saved_ports .content{
+        width: 80%;
+    }
+    #third_section .content .form .second_card{
+        padding: 1rem;
+    }
+    #third_section .content .form .second_card div{
+        margin-left: 1rem;
+    }
+    #first_section .content h1{
+        width: 100%;
+    }
+    #first_section .content .second{
+        width: 100%;
+    }
+    #first_section .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #first_section .logged_in .welcome_text input{
+        width: 100%;
+    }
+    #first_section .howitWorks{
+        height: auto;
+        flex-direction: column;
+    }
+    #first_section .howitWorks .card{
+        flex-direction: column;
+    }
+    #service_providers .header, 
+    #saved_ports .header{
+        width: 80%;
+    }
+    #service_providers .search, 
+    #saved_ports .search{
+        width: 80%;
+    }
+    #service_providers .content, #saved_ports .content{
+        width: 80%;
+    }
+    #third_section h1{
+        width: 80%;
+        text-align: center;
+    }
+    #third_section .content .form{
+        flex-direction: column;
+        padding: 2rem 0;
+        height: auto;
+        gap: 2rem;
+    }
+    #third_section .content .form .first_card{
+        justify-content: center;
+    }
+    #third_section .content .form .first_card input, 
+    #third_section .content .form .first_card textarea, 
+    .one_click_planner .content .form .first_card input, 
+    .one_click_planner .content .form .first_card textarea{
+        width: 90%;
+    }
+    #third_section .content .form .first_card .btn_submit{
+        width: 100%;
+    }
+    #first_section .content .second .buttons input, 
+    #first_section .content .second .buttons a{
+        width: 100%;
+    }
+    #first_section .content .second .buttons{
+        flex-direction: column;
+    }
+    #fourth_section .content{
+        width: 100%;
+    }
+    #third_section .content .form .first_card,
+    #third_section .content .form .second_card{
+        width: 500px;
+    }
+    #third_section .content .form{
+        width: 600px;
+    }
+    .one_click_planner .content .form{
+        padding: 2rem 0;
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .one_click_planner .content .form .first_card .btn_submit{
+        width: 100%;
+    }
+    .one_click_planner .content .form .first_card{
+        width: 80%;
+    }
+    .one_click_planner .content .form .second_card{
+        width: 80%;
+    }
+    #third_section .content .form .sign_in_inputs .alternative_login div{
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+}
+@media only screen and (max-width: 1160px){
+    #fourth_section .content{
+        flex-direction: column;
+    }
+    #fourth_section .content .service_card{
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #0040ff28;
+    }
+}
+@media only screen and (max-width: 1100px){
+    #fifth_section .content{
+        text-wrap: no-wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 2rem 0;
+    }
+    #fifth_section .content .left_side, 
+    #fifth_section .content .right_side{
+        width: 400px;
+    }
+    #fifth_section .content .left_side div, 
+    #fifth_section .content .right_side div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #fifth_section .content .left_side div .qa, 
+    #fifth_section .content .right_side div .qa{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 1050px){
+    footer .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer .main ul{
+        padding: 0;
+    }
+    footer .main .social{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 720px){
+    footer .subinfo{
+        flex-direction: column;
+    }
+    footer .main .social div{
+        flex-direction: column;
+    }
+    #fourth_section .content .service_card{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 640px){
+    #second_section .content{
+        flex-direction: column;
+        gap: 1rem;
+    }
+     #third_section .content{
+        width: 100%;
+     }
+     #third_section .content .form .first_card, 
+     #third_section .content .form .second_card{
+        width: 70%;
+     }
+     #third_section .content .form .first_card{
+        justify-content: center;
+        align-items: center;
+     }
+     #fifth_section .content .left_side, 
+     #fifth_section .content .right_side{
+        width: 100%;
+     }
+     #fifth_section .content .left_side div .qa, 
+     #fifth_section .content .right_side div .qa{
+        width: 60%;
+     }
+}
+@media only screen and (max-width: 460px){
+    #third_section .content .form .sign_in_inputs div{
+        width: 300px;
+    }
+    #third_section .content .form{
+        width: 100%;
+    }
 }
